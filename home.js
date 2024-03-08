@@ -1,0 +1,106 @@
+<html>
+	<head>
+		<title>[%productnameForDisplay%]</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script src="//s3.amazonaws.com/scripting.com/code/includes/jquery-1.9.1.min.js"></script>
+<link href="//s3.amazonaws.com/scripting.com/code/includes/bootstrap.css" rel="stylesheet">
+<script src="//s3.amazonaws.com/scripting.com/code/includes/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/fontawesome/css/all.css">
+<link href="//fonts.googleapis.com/css?family=Ubuntu:400,500i,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+
+<script src="//s3.amazonaws.com/scripting.com/code/includes/basic/code.js?x=1"></script>
+<link href="//s3.amazonaws.com/scripting.com/code/includes/basic/styles.css" rel="stylesheet" type="text/css">
+
+		
+		<!-- This stuff is needed for an outliner -->
+			<script src="//s3.amazonaws.com/scripting.com/code/concord/testing/3.0.6/concord.js"></script>
+			<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/concord/testing/3.0.6/concordstyles.css"/>
+			<script src="//s3.amazonaws.com/fargo.io/code/shared/outliner.js"></script>
+			<script src="//s3.amazonaws.com/scripting.com/code/opmlpackage/client/opml.js"></script>
+			<script src="//s3.amazonaws.com/fargo.io/code/keypress.js" /></script>
+			<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/misc.js"></script>
+		
+		<!-- This stuff is needed for rivers -->
+			<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/api.js"></script>
+			<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/misc.js"></script>
+			<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/misc.css" rel="stylesheet" type="text/css">
+			<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/oldschoolrender.css" rel="stylesheet" type="text/css">
+			<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/oldschoolrender.js"></script>
+			<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/getfeedinfo.js"></script>
+			<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/riverviewer.js"></script>
+			<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/riverviewer.css" rel="stylesheet" type="text/css">
+			<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/mobile.css" rel="stylesheet" type="text/css">
+			<script src="//s3.amazonaws.com/fargo.io/code/markdownConverter.js"></script>
+		
+		<!-- This stuff is needed for tabsManager -->
+			<link href="//s3.amazonaws.com/scripting.com/code/tabsmanager2/styles.css" rel="stylesheet" type="text/css">
+			<script src="//s3.amazonaws.com/scripting.com/code/tabsmanager2/code.js"></script>
+		
+		<!-- This stuff is needed for newsProduct -->
+			<link href="//s3.amazonaws.com/scripting.com/code/newsproducthome/styles.css" rel="stylesheet" type="text/css">
+			<script src="//s3.amazonaws.com/scripting.com/code/newsproducthome/code.js"></script>
+			<link href='//fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		
+		<!-- This stuff is needed for outlineDialog -->
+			<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/outlinedialog/styles.css"> 
+			<script src="//s3.amazonaws.com/scripting.com/code/outlinedialog/code.js"></script>
+		
+		<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/newsproducthome/styles.css?x=0"> 
+		<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/newsproducthome/mobile.css"> 
+		<script src="//s3.amazonaws.com/scripting.com/code/newsproducthome/code.js"></script>
+		
+		<script>
+			var appConsts = {
+				urlFeedlandServer: "https://feedland.com/",
+				productname: "[%productName%]",
+				productnameForDisplay: "[%productnameForDisplay%]",
+				version: "[%version%]",
+				urlServerForClient: "[%urlServerForClient%]",
+				urlSocketServer: "[%urlWebsocketServerForClient%]",
+				flEnableLogin: [%flEnableLogin%],
+				flUseSockets: true,
+				urlTemplate: "[%urlTemplate%]"
+				}
+			
+			var globalOutline = [%theOutlineInJson%];
+			
+			var theNewsProductSpec = [%theNewsProductSpec%];
+			
+			userPrefs = [%userPrefs%]; //9/27/22 by DW -- for the new CNAME version of news products
+			</script>
+		
+		<style>
+			</style>
+		</head>
+	<body>
+		<div class="divPageBody">
+			<div class="divNewsProduct">
+				<div class="divOpmlLink" data-toggle="tooltip" data-placement="right" data-original-title="Get the OPML for the data on this page.">
+					<div class="divXmlIcon">XML</div>
+					<a href="" target="_blank">
+						</a>
+					</div>
+				<div class="divPageTop">
+					<div class="divTopOfPageText">
+						<div class="divProductLogo">
+							[%pageImage%]
+							</div>
+						<div class="divNameAndTagline">
+							<div class="divProductTitle">[%pageTitle%]</div>
+							<div class="divProductTagline">[%pageDescription%]</div>
+							</div>
+						</div
+					</div>
+				</div>
+			</div>
+		<script>
+			$(document).ready (function () {
+				startup ();
+				});
+			</script>
+		</body>
+	</html>
