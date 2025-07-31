@@ -38,7 +38,7 @@
 		
 		<!-- This stuff is needed for tabsManager -->
 			<link href="//s3.amazonaws.com/scripting.com/code/tabsmanager2/styles.css" rel="stylesheet" type="text/css">
-			<script src="//s3.amazonaws.com/scripting.com/code/tabsmanager2/code.js"></script>
+			<script src="//s3.amazonaws.com/scripting.com/code/tabsmanager2/code.js?x=0"></script>
 		
 		<!-- This stuff is needed for newsProduct -->
 			<link href="//s3.amazonaws.com/scripting.com/code/newsproducthome/styles.css" rel="stylesheet" type="text/css">
@@ -51,11 +51,11 @@
 		
 		<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/newsproducthome/styles.css?x=0"> 
 		<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/newsproducthome/mobile.css"> 
-		<script src="//s3.amazonaws.com/scripting.com/code/newsproducthome/code.js"></script>
+		<script src="//s3.amazonaws.com/scripting.com/code/newsproducthome/code.js?x=0"></script>
 		
 		<script>
 			var appConsts = {
-				urlFeedlandServer: "https://feedland.com/",
+				urlFeedlandServer: "[%urlServerForClient%]", /* 2/26/24 by DW */
 				productname: "[%productName%]",
 				productnameForDisplay: "[%productnameForDisplay%]",
 				version: "[%version%]",
